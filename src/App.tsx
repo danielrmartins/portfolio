@@ -149,6 +149,13 @@ export default function App() {
             <div className="contact-links">
               <a
                 className="contact-item"
+                href="mailto:danielmartins10@gmail.com"
+              >
+                <span className="contact-label">Email</span>
+                danielmartins10@gmail.com
+              </a>
+              <a
+                className="contact-item"
                 href="https://www.linkedin.com/in/omartinsdaniel/"
                 target="_blank"
                 rel="noreferrer"
