@@ -19,6 +19,7 @@ const PROJECTS = [
     tags: ["React", "TypeScript", "Node.js", "Fastify", "Strava API", "Vercel"],
     demo: "https://corre-e-dado.vercel.app",
     github: "https://github.com/danielrmartins/strava-api-dashboard",
+    image: "/corre-que-e-dado.png",
   },
   {
     name: "instachecker",
@@ -26,6 +27,7 @@ const PROJECTS = [
     tags: ["React", "TypeScript", "Vite", "Vercel"],
     demo: "https://insta-checker-orpin.vercel.app",
     github: "https://github.com/danielrmartins/insta-checker",
+    image: "/instachecker.png",
   },
 ];
 
@@ -98,6 +100,9 @@ export default function App() {
             <div className="projects-list">
               {PROJECTS.map((p) => (
                 <div key={p.name} className="project-card">
+                  <a href={p.demo} target="_blank" rel="noreferrer" className="project-image-link">
+                    <img src={p.image} alt={p.name} className="project-image" />
+                  </a>
                   <div className="project-top">
                     <span className="project-name">{p.name}</span>
                     <div className="project-links">

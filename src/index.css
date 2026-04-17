@@ -195,8 +195,36 @@ section {
   background: var(--surface);
   border: 1px solid var(--border);
   border-radius: 12px;
-  padding: 24px;
+  padding: 0;
+  overflow: hidden;
   transition: border-color 0.15s;
+}
+
+.project-image-link {
+  display: block;
+}
+
+.project-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  border-bottom: 1px solid var(--border);
+}
+
+.project-card .project-top,
+.project-card .project-desc,
+.project-card .project-tags {
+  padding: 0 24px;
+}
+
+.project-card .project-top {
+  padding-top: 20px;
+}
+
+.project-card .project-tags {
+  padding-bottom: 20px;
 }
 
 .project-card:hover {
